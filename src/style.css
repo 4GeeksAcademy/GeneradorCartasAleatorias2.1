@@ -1,1 +1,41 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #006400;
+  margin: 0;
+}
+.contenedor {
+  display: flex;
+  position: relative;
+}
+.cartas {
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.simbUpLeft,
+.simbDownRight {
+  position: absolute;
+  font-size: 32px;
+}
+.simbUpLeft {
+  top: 10px;
+  left: 10px;
+}
+.simbDownRight {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+.texCenter {
+  font-size: 84px;
+}
